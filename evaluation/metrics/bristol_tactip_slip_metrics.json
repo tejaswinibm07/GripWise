@@ -1,0 +1,49 @@
+{
+  "dataset_name": "Bristol Biomimetic Tactile Slip Dataset",
+  "model_name": "RandomForestClassifier (TacTip Optical Kinematics)",
+  "sensor_type": "TacTip Biomimetic Optical Array (127 pins)",
+  "train_samples": 2640,
+  "test_samples": 2640,
+  "train_class_distribution": {
+    "0": 2560,
+    "1": 80
+  },
+  "test_class_distribution": {
+    "0": 2540,
+    "1": 100
+  },
+  "accuracy": 0.9924,
+  "balanced_accuracy": 0.9,
+  "precision": 1.0,
+  "recall": 0.8,
+  "f1_score": 0.8889,
+  "roc_auc": 1.0,
+  "confusion_matrix": [
+    [
+      2540,
+      0
+    ],
+    [
+      20,
+      80
+    ]
+  ],
+  "feature_names": [
+    "mean_pin_speed",
+    "std_pin_speed",
+    "max_pin_speed",
+    "min_pin_speed",
+    "spatial_coherence",
+    "coherence_std"
+  ],
+  "feature_importances": {
+    "mean_pin_speed": 0.3749,
+    "std_pin_speed": 0.1971,
+    "max_pin_speed": 0.2431,
+    "min_pin_speed": 0.0207,
+    "spatial_coherence": 0.1487,
+    "coherence_std": 0.0155
+  },
+  "leakage_protection": "Preserves Bristol official split: 20 train runs vs 20 independent test runs.",
+  "disclaimer": "Trained strictly on Bristol physical optical tactile recordings."
+}

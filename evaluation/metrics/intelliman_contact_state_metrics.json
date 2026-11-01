@@ -1,0 +1,81 @@
+{
+  "dataset_name": "IntelliMan Contact and Slippage (ICECS 2025)",
+  "model_name": "Multi-Class Grasp Phase Random Forest",
+  "class_names": [
+    "0: Rest / Detached",
+    "1: Static Contact",
+    "2: Dynamic Slippage"
+  ],
+  "train_samples": 5154,
+  "test_samples": 1287,
+  "accuracy": 0.7234,
+  "macro_f1": 0.723,
+  "weighted_f1": 0.7223,
+  "class_f1_scores": {
+    "0: Rest / Detached": 0.7048,
+    "1: Static Contact": 0.6698,
+    "2: Dynamic Slippage": 0.7944
+  },
+  "confusion_matrix": [
+    [
+      308,
+      65,
+      50
+    ],
+    [
+      114,
+      281,
+      46
+    ],
+    [
+      29,
+      52,
+      342
+    ]
+  ],
+  "feature_names": [
+    "global_vibration_mean_std",
+    "global_vibration_max_std",
+    "global_vibration_energy",
+    "global_signal_ptp",
+    "ch1_std",
+    "ch2_std",
+    "ch3_std",
+    "ch4_std",
+    "ch5_std",
+    "ch6_std",
+    "ch7_std",
+    "ch8_std",
+    "ch1_mean",
+    "ch2_mean",
+    "ch3_mean",
+    "ch4_mean",
+    "ch5_mean",
+    "ch6_mean",
+    "ch7_mean",
+    "ch8_mean"
+  ],
+  "feature_importances": {
+    "global_vibration_mean_std": 0.0612,
+    "global_vibration_max_std": 0.0757,
+    "global_vibration_energy": 0.0653,
+    "global_signal_ptp": 0.1177,
+    "ch1_std": 0.0502,
+    "ch2_std": 0.0485,
+    "ch3_std": 0.0589,
+    "ch4_std": 0.0348,
+    "ch5_std": 0.0597,
+    "ch6_std": 0.0266,
+    "ch7_std": 0.033,
+    "ch8_std": 0.067,
+    "ch1_mean": 0.0679,
+    "ch2_mean": 0.0371,
+    "ch3_mean": 0.0274,
+    "ch4_mean": 0.0234,
+    "ch5_mean": 0.0497,
+    "ch6_mean": 0.0262,
+    "ch7_mean": 0.0217,
+    "ch8_mean": 0.0481
+  },
+  "disclaimer": "Classifies physical PVDF sensor windows into Rest (0), Contact (1), and Slip (2)."
+}

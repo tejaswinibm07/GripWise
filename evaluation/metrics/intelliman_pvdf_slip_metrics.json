@@ -1,0 +1,77 @@
+{
+  "dataset_name": "IntelliMan Contact and Slippage (ICECS 2025)",
+  "model_name": "RandomForestClassifier (PVDF Dynamic Vibration)",
+  "sensor_type": "8-Channel PVDF Piezoelectric Film",
+  "train_samples": 5154,
+  "test_samples": 1287,
+  "train_class_distribution": {
+    "0": 3462,
+    "1": 1692
+  },
+  "test_class_distribution": {
+    "0": 864,
+    "1": 423
+  },
+  "accuracy": 0.8508,
+  "balanced_accuracy": 0.8406,
+  "precision": 0.7538,
+  "recall": 0.8109,
+  "f1_score": 0.7813,
+  "roc_auc": 0.9121,
+  "confusion_matrix": [
+    [
+      752,
+      112
+    ],
+    [
+      80,
+      343
+    ]
+  ],
+  "feature_names": [
+    "global_vibration_mean_std",
+    "global_vibration_max_std",
+    "global_vibration_energy",
+    "global_signal_ptp",
+    "ch1_std",
+    "ch2_std",
+    "ch3_std",
+    "ch4_std",
+    "ch5_std",
+    "ch6_std",
+    "ch7_std",
+    "ch8_std",
+    "ch1_ptp",
+    "ch2_ptp",
+    "ch3_ptp",
+    "ch4_ptp",
+    "ch5_ptp",
+    "ch6_ptp",
+    "ch7_ptp",
+    "ch8_ptp"
+  ],
+  "feature_importances": {
+    "global_vibration_mean_std": 0.0606,
+    "global_vibration_max_std": 0.0872,
+    "global_vibration_energy": 0.1081,
+    "global_signal_ptp": 0.1484,
+    "ch1_std": 0.0347,
+    "ch2_std": 0.0268,
+    "ch3_std": 0.0687,
+    "ch4_std": 0.0231,
+    "ch5_std": 0.0495,
+    "ch6_std": 0.0258,
+    "ch7_std": 0.0266,
+    "ch8_std": 0.0472,
+    "ch1_ptp": 0.0872,
+    "ch2_ptp": 0.017,
+    "ch3_ptp": 0.0551,
+    "ch4_ptp": 0.0172,
+    "ch5_ptp": 0.0502,
+    "ch6_ptp": 0.0306,
+    "ch7_ptp": 0.0167,
+    "ch8_ptp": 0.0195
+  },
+  "leakage_protection": "Trial/recording-level partition: entire trial runs held out. Zero window overlap.",
+  "disclaimer": "Trained on real public research PVDF tactile data. Evaluated on unseen physical trial recordings."
+}

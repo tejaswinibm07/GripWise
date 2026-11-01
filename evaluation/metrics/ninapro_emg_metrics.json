@@ -1,0 +1,80 @@
+{
+  "dataset_name": "NinaPro sEMG Movement Database (DB1/DB2 Architecture)",
+  "model_name": "RandomForestClassifier (sEMG Feature Envelope)",
+  "gestures": [
+    "Rest",
+    "Power Grasp",
+    "Precision Pinch",
+    "Hand Open",
+    "Lateral Key"
+  ],
+  "train_samples": 480,
+  "test_samples": 120,
+  "accuracy": 0.8833,
+  "macro_f1": 0.8832,
+  "weighted_f1": 0.8832,
+  "confusion_matrix": [
+    [
+      24,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      19,
+      4,
+      0,
+      1
+    ],
+    [
+      0,
+      3,
+      20,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      22,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      2,
+      21
+    ]
+  ],
+  "feature_names": [
+    "emg_mav_ch1",
+    "emg_rms_ch1",
+    "emg_wl_ch1",
+    "emg_mav_ch2",
+    "emg_rms_ch2",
+    "emg_wl_ch2",
+    "emg_mav_ch3",
+    "emg_rms_ch3",
+    "emg_wl_ch3",
+    "emg_mav_ch4",
+    "emg_rms_ch4",
+    "emg_wl_ch4",
+    "emg_mav_ch5",
+    "emg_rms_ch5",
+    "emg_wl_ch5",
+    "emg_mav_ch6",
+    "emg_rms_ch6",
+    "emg_wl_ch6",
+    "emg_mav_ch7",
+    "emg_rms_ch7",
+    "emg_wl_ch7",
+    "emg_mav_ch8",
+    "emg_rms_ch8",
+    "emg_wl_ch8"
+  ],
+  "disclaimer": "Subject-independent evaluation. sEMG gestures classify movement intent, NOT safe minimum grip force."
+}

@@ -1,0 +1,18 @@
+{
+  "dataset_name": "GripWise Synthetic Force-Regression Benchmark",
+  "model_name": "RandomForestRegressor (Min-Safe-Force Estimator)",
+  "data_nature": "Synthetic Demonstration Data",
+  "r2_score": 0.9628,
+  "mae": 0.657,
+  "training_samples": 1200,
+  "test_samples": 300,
+  "features": [
+    "Mass (g)",
+    "Friction Coeff (\u03bc)",
+    "Compliance (mm/N)",
+    "Fragility Limit (N)",
+    "User Safety Margin"
+  ],
+  "leakage_protection": "Strict train/test split on 1,500 independent samples. No test data contamination.",
+  "disclaimer": "Trained exclusively on synthetic mechanics heuristics. Not certified for clinical prosthesis."
+}
