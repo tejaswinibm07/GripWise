@@ -1,0 +1,32 @@
+{
+  "Alex (Standard)": {
+    "name": "Alex (Standard)",
+    "preset_mode": "Standard",
+    "base_safety_margin": 1.35,
+    "learned_adaptation_bias": 0.01,
+    "slip_sensitivity": 0.8,
+    "total_trials": 10,
+    "successful_trials": 10,
+    "created_at": "2026-10-27 21:43"
+  },
+  "Sam (Delicate Focus)": {
+    "name": "Sam (Delicate Focus)",
+    "preset_mode": "Delicate",
+    "base_safety_margin": 1.15,
+    "learned_adaptation_bias": -0.02,
+    "slip_sensitivity": 0.8,
+    "total_trials": 0,
+    "successful_trials": 0,
+    "created_at": "2026-10-27 21:43"
+  },
+  "Jordan (Firm Grip)": {
+    "name": "Jordan (Firm Grip)",
+    "preset_mode": "Firm",
+    "base_safety_margin": 1.65,
+    "learned_adaptation_bias": 0.1,
+    "slip_sensitivity": 0.8,
+    "total_trials": 0,
+    "successful_trials": 0,
+    "created_at": "2026-10-27 21:43"
+  }
+}
